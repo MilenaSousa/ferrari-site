@@ -90,7 +90,9 @@ jQuery.fn.heroCarousel = function(options){
 				function autoSlide(){
 					if(!paused && !$('.hero-carousel').hasClass('resizing'))
 					{
-				  		carouselNav.find('.next a').trigger('click');
+						carouselNav.find('.next a').trigger('click');
+						var nextSlideIndex = currentItem < elements.length - 1 ? currentItem + 1 : 0;
+						animateItem(elements.eq(nextSlideIndex), 'next');
 				  	}
 				}
 				timeoutInterval = window.setInterval(autoSlide, options.timeout);

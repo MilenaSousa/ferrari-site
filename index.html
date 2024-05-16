@@ -7,6 +7,9 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="HandheldFriendly" content="true">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">     
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
@@ -16,9 +19,6 @@
 	<!-- Hero Causel CSS -->
 	<link rel="stylesheet" href="css/jquery.heroCarousel.css">
 	
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 </head>
 
 <body>
@@ -26,46 +26,46 @@
 	<!-- Start Header -->
 	<header>
 		<div class="container">
-			<div class="row">
-				<div class="span5">
-					<div id="logo">
-						<a href="index.html">Ferrari</a>
-					</div>
+			<div class="customHeader">
+				<div class="text-logo">
+					<img src="img/logo.png" class="logo" alt="ferrari-logo"/>
+					<h5>Ferrari</h5>
 				</div>
 				<div class="span7">
 					<!-- Start Navigation -->
 					<nav>
 						<ul id="navigation" class="pull-right hidden-phone">
 							<li>
-								<a href="portfolio.html">Home</a>
+								<a href="index.html">Home</a>
 							</li>
 							<li>
-								<a href="portfolio.html">Sobre</a>
+								<a href="about.html">Sobre</a>
 							</li>
 							<li>
-								<a href="portfolio.html">Historia</a>
+								<a href="history.html">Historia</a>
 							</li>
 							<li>
-								<a href="blog.html">Videos</a>
+								<a href="videos.html">Videos</a>
 							</li>
-							<li>
-								<a href="contact.html">Saiba mais</a>
-							</li>
-							<li class="last submenu">
-								<a href="shortcodes.html">Contato</a>
-								<ul class="dropmenu-active">
-									<li><a href="shortcodes.html">Shortcodes</a></li>
-									<li><a href="icons.html">Icons</a></li>
-									<li><a href="columns.html">Columns</a></li>
-									<li><a href="retina.html">Retina Ready</a></li>
-									<li><a href="responsive.html">Responsive</a></li>
-									<li><a href="cute-slider.html">Cute Slider</a></li>
-								</ul>
+                            <li>
+								<a href="contato.html">Contato</a>
 							</li>
 						</ul>
 					</nav>
 					<!-- End Navigation -->
 				</div>
+				<div class="span7 mobile-menu">
+					<span><i class="icon-bars"></i></span>
+				</div>
+				<div id="sidebar-mobile">
+					<ul>
+					  <li><a href="index.html">Home</a></li>
+					  <li><a href="about.html">Sobre</a></li>
+					  <li><a href="history.html">Historia</a></li>
+					  <li><a href="videos.html">Videos</a></li>
+					  <li><a href="contato.html">Contato</a></li>
+					</ul>
+				  </div>
 			</div>
 		</div>
 	</header>
@@ -73,131 +73,167 @@
 
 	<!-- Start Hero Carousel -->
 	<section class="hero">
-		<div class="hero-carousel">
-			<article>
-				<img class="slider-image" src="img/slider/image1.jpeg" alt="slide 1" />
-			</article>
-			<article>
-				<img class="slider-image" src="img/slider/image2.jpeg" alt="slide 2" />
-				<!-- <div class="contents">
-					<h4 class="color-text"></h4>
-					<p></p>
-				</div> -->
-			</article>
-			<article>
-				<img class="slider-image" src="img/slider/image3.jpeg" alt="slide 3" />
-			</article>
-		</div>
-	</section>
-	<!-- End Hero Carousel -->
-	
-	<!-- Start Intro Block -->
-	<section class="intro container">
-		<div class="row">
-			<div class="span12">
-				<p>Award winning <a href="#">digital agency</a>. We bring a personal and effective approach to every project we work on, which is why our clients love us and why they keep coming back.</p>
+
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<video width="100%" autoplay muted disablepictureinpicture disableRemotePlayback>
+					<source src="video/slides/video1.mp4" type="video/mp4">
+				</video>
+				
 			</div>
+			
+			<div class="mySlides fade">
+				<video width="100%" autoplay muted disablepictureinpicture disableRemotePlayback>
+					<source src="video/slides/video2.mp4" type="video/mp4">
+				</video>
+			  
+			</div>
+			
+			<div class="mySlides fade">
+			  	<video width="100%" autoplay muted disablepictureinpicture disableRemotePlayback>
+					<source src="video/slides/video3.mp4" type="video/mp4">
+				</video>
+			  	
+			</div>
+			
 		</div>
 	</section>
-	<!-- End Intro Block -->
-			
+
 	<!-- Start Services Icons -->
 	<section id="services" class="container">
+		<div class="title">
+			<h4>Uma breve introdução</h4>
+		</div>
 		<div class="row">
 			<div class="span6"> 
-				<img src="img/slider/image1.jpeg" alt="img 1" />
+				<img src="img/presentation1.jpg" alt="img 1" />
 			</div>
-			<div class="span6">
+			<div class="span6 description fade-in">
+				<h5>O lançamento revolucionario</h5>
 				<div class="service-desc">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus rhoncus sem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus rhoncus sem.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus rhoncus sem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus rhoncus sem, ornare et tempor et, rhoncus rhoncus sem.</p>
 				</div>
 			</div>
 		</div>
-		<div class="row service-section" >
-			<div class="span6">
+		<div class="row service2" >
+			<div class="span6 description2">
 				<div class="service-desc">
+					<h5>Entregamos uma experiencia</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus rhoncus sem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus rhoncus sem.</p>
 				</div>
 			</div>
 			<div class="span6"> 
-				<img src="img/slider/image1.jpeg" alt="img 1" />
+				<img src="img/presentation2.jpg" alt="img 1" />
 			</div>
 		</div>
 	</section>
 	<!-- End Services Icons -->	
-	
+
+	<!--Video Section Panel -->
+	<section id="video-section" class="container">
+		<div class="row">
+			<hr class="span12">
+		</div>
+		
+		<div class="row">
+			<div class="span6">
+				<iframe src="http://player.vimeo.com/video/50834315?byline=0&amp;portrait=0&amp;badge=0&amp;color=b0b825" frameborder="0"></iframe>
+			</div>
+			<div class="span6 description">
+				<h5>Comece por aqui</h5>
+				<div class="service-desc">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus rhoncus sem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus rhoncus sem, ornare et tempor et, rhoncus rhoncus sem.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Video Section Panel End -->
+
+	<section id="newsletter" class="container">
+		<div class="row">
+			<hr class="span12">
+		</div>
+		<div class="row">
+			<div class="span8 offset2 desc">
+				<h4>Se inscreva para receber nossa newsletter</h4>
+				<p class="large gray">Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor.</p>
+				
+				<form class="well iefix ">
+					<div class="row">
+						<div class="span8 pull-bottom">
+							<label>E-mail</label>
+							<input class="span6 input-newsletter" type="text" name="email" placeholder="E-mail">
+							<button type="submit" class="btn large color rounded"><i class="icon-envelope-alt"></i>Inscrever</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
 	<!-- Start Social Panel -->
 	<section id="social-data">
 		<div class="container">
 			<div class="row">
 				<div class="span4">
-					<h5>Contacts</h5>
-					<address>
+					<div class="text-logo">
+						<div>
+							<img src="img/logo.png" class="logo" alt="ferrari-logo"/>
+						</div>
+						<h5>Ferrari</h5>
+					</div>
+					<p class="description">
+						Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock.
+					</p>
+					
+					<!-- <address>
 						<strong>Address:</strong> 77a First Street, London, BC1A 4RT, UK<br>
 						<strong>Telephones:</strong> +44 123-457-7890, 321-765-0987<br>
 						<strong>E-mail:</strong> <a href="#">hello@rudermann@co.uk</a>						
-					</address>
+					</address> -->
+				</div>
+				<div class="span4 contact-options">
+					<h5>Entre em contato</h5>
+					<div>
+						<div class="contact-icons">
+							<li><i class="icon-envelope"></i>teste@gmail.com</li>
+							<li><i class="icon-phone"></i>(99) 9 9999-9999</li>
+							<li><i class="icon-map"></i>Rua Brasilia – 2930</li>
+						</div>
+					</div>
+				</div>
+				<div class="span4">
 					<div class="follow">
-						<p>Follow us:</p>
+						<h5>Nossas redes</h5>
 						<ul class="social-icons">
 							<li><a href="#"><span><i class="icon-facebook"></i></span></a></li>
 							<li><a href="#"><span><i class="icon-twitter"></i></span></a></li>
-							<li><a href="#"><span><i class="icon-vimeo"></i></span></a></li>
-							<li><a href="#"><span><i class="icon-pinterest"></i></span></a></li>
+							<li><a href="#"><span><i class="icon-youtube"></i></span></a></li>
 							<li><a href="#"><span><i class="icon-linkedin"></i></span></a></li>
 						</ul>
 					</div>
-					<hr class="visible-phone">
-				</div>
-				<div class="span4">
-					<h5>Latest tweets <a class="hidden-tablet" href="http://twitter.com/envato" target="_blank">@envato</a></h5>
-					<div id="twitter-feed"></div>
-					<hr class="visible-phone">	
-				</div>
-				<div class="span4">
-					<h5>Photostream</h5>
-					<ul id="basicuse" class="photostream thumbs unstyled"></ul>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- End Services Icons -->
-	
-	<!-- Start Clients Block -->
-	<!-- <div id="clients" class="clients container hidden-phone">
-		<div class="row">
-			<div class="span12">
-				<div class="vertical-align">
-					<ul class="unstyled">
-						<li><a href="#"><img src="img/clients/logo1.png" alt="" /></a></li>
-						<li><a href="#"><img src="img/clients/logo2.png" alt="" /></a></li>
-						<li><a href="#"><img src="img/clients/logo3.png" alt="" /></a></li>
-						<li><a href="#"><img src="img/clients/logo4.png" alt="" /></a></li>
-						<li><a href="#"><img src="img/clients/logo5.png" alt="" /></a></li>
-						<li><a href="#"><img src="img/clients/logo1.png" alt="" /></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div> -->
-	<!-- End Clients Block -->
+
 			
 	<!-- Start Footer -->
 	<footer class="container">
 		<div class="row">
-			<div class="span12">
-				<p>© 2012 <a href="index.html">Rudermann</a>. Powered by WordPress.<br>
-					<span class="theme-author"><a href="http://themes.tvda.eu" target="_blank">Ruderman Template</a> by <a href="http://themes.tvda.eu" target="_blank">TVDA</a>.</span>
+			<div class="span11">
+				<p>© 2024 <a href="index.html">Ferrari</a>. Desenvolvido com bootstrap. <br>
+					<span class="theme-author"><a href="http://themes.tvda.eu" target="_blank">Ferrari Original</a> por <a href="http://themes.tvda.eu" target="_blank">Pen6</a>.</span>
 				</p>
 				<!-- Start Footer Navigation -->
 				<nav class="hidden-phone">
 					<ul class="pull-right">
 						<li><a class="active" href="index.html">Home</a></li>
-						<li><a href="shrotcodes.html">Shortcodes</a></li>
-						<li><a href="icons.html">Icons</a></li>
-						<li><a href="retina.html">Retina Ready</a></li>
-						<li><a href="responsive.html">Responsive</a></li>
-						<li><a href="cute-slider.html">Cute Slider</a></li>
+						<li><a href="shrotcodes.html">Sobre</a></li>
+						<li><a href="icons.html">Historia</a></li>
+						<li><a href="retina.html">Videos</a></li>
+						<li><a href="responsive.html">Saiba mais</a></li>
+						<li><a href="cute-slider.html">Contato</a></li>
 					</ul>
 				</nav>
 				<!-- End Footer Navigation -->
@@ -209,25 +245,44 @@
 	<!-- jQuery -->	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="js/jquery.easing-1.3.js"></script>
-
-	<!-- jQuery Hero Slider -->
-	<script src="js/hero/jquery.heroCarousel-1.3.js"></script>
 	<script>
-		$(function(){
-		    if ($('.hero-carousel').length > 0)
-		    {
-		    	$('.hero-carousel').heroCarousel({
-		    		easing: 'easeOutExpo',
-		    		css3pieFix: true
-		    	});
-		    }
+		$('#services').delay(0).fadeTo(0, 0).fadeTo(5000, 1);
+	</script>
+
+	<script>
+		let slideIndex = 0;
+		showSlides();
+		
+		function showSlides() {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 6000); // Change image every 2 seconds
+		}
+	</script>
+
+	<!-- menu responsivo -->
+	<script>
+		$(document).ready(function(){
+			$(".mobile-menu").click(function(){
+				$("#sidebar-mobile").toggleClass("open");
+			});
 		});
 	</script>
 	
 	<!-- Main JS Plugins -->
 	<script src="js/shortcodes.js"></script><!-- Shortcodes -->
 	<script src="js/main.js"></script><!-- Hovers -->
-	<script src="js/selectnav.min.js"></script><!-- Mobile Navigation -->
 	<script src="js/jquery.fancybox.pack.js"></script><!-- Fancybox -->
 	<script src="js/jquery.fancybox-media.js"></script><!-- Fancybox Media Helper -->
 	<script src="js/jquery.flexslider.js"></script><!-- Flexslider -->

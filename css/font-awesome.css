@@ -383,6 +383,9 @@ ul.icons li .icon-large:before {
 .icon-minus:before {
   content: "\f068";
 }
+.icon-bars:before {
+  content: "\f0c9";
+}
 .icon-asterisk:before {
   content: "\f069";
 }
